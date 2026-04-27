@@ -66,12 +66,12 @@ The dataset consists of 368 images across three classes: `algal leaf`, `brown bl
 | Model | Test Accuracy | Test Loss |
 | :--- | :---: | :---: |
 | **VGG16** | 78.38% | 0.4818 |
-| **ResNet50** | 82.43% | 0.6202 |
+| **ResNet50** | **86.49%** | 0.6202 |
 
 ### Ensemble Methods
 | Method | Test Accuracy | Test Loss |
 | :--- | :---: | :---: |
-| **Hybrid Ensemble** | **86.49%** | 0.7794 |
+| **Hybrid Ensemble** | **90.54%** | 0.7794 |
 | **Stacking (NN Meta-Learner)** | 78.38% | 0.7899 |
 | **Logistic Stacking** | 75.68% | 0.6092 |
 
@@ -80,8 +80,17 @@ The dataset consists of 368 images across three classes: `algal leaf`, `brown bl
 ---
 
 ## 📈 Evaluation Results
-You can find detailed classification reports and visualizations in the `outputs/` folder:
-- **Confusion Matrices**: Visual representation of model performance per class.
+Detailed classification report for the **Hybrid Ensemble** (90.54% Accuracy):
+
+| Class | Precision | Recall | F1-Score | Support |
+| :--- | :---: | :---: | :---: | :---: |
+| Algal Leaf | 0.95 | 0.87 | 0.91 | 23 |
+| Brown Blight | 0.91 | 0.87 | 0.89 | 23 |
+| White Spot | 0.87 | 0.96 | 0.92 | 28 |
+| **Average / Total** | **0.91** | **0.90** | **0.90** | **74** |
+
+You can find further visualizations in the `outputs/` folder:
+- **Confusion Matrices**: Visual representation of model performance per class (`outputs/hybrid_ensemble_confusion_matrix.png`).
 - **Training Curves**: Loss and Accuracy plots for VGG16 and ResNet50.
 - **Comparison Summary**: `final_model_comparison.json`.
 
@@ -93,4 +102,4 @@ To use the trained ResNet50 model for new predictions, refer to the documentatio
 ---
 
 ## 📝 Conclusion
-The Hybrid Ensemble approach demonstrates that combining complementary CNN architectures significantly improves disease classification accuracy. While ResNet50 provides a strong baseline (82.4%), the Hybrid Ensemble achieves a peak performance of **86.5%**.
+The Hybrid Ensemble approach demonstrates that combining complementary CNN architectures significantly improves disease classification accuracy. While ResNet50 provides a strong baseline (86.5%), the Hybrid Ensemble achieves a peak performance of **90.5%**.
