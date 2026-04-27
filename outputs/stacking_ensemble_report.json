@@ -1,0 +1,33 @@
+{
+    "algal leaf": {
+        "precision": 0.6923076923076923,
+        "recall": 0.782608695652174,
+        "f1-score": 0.7346938775510204,
+        "support": 23.0
+    },
+    "brown blight": {
+        "precision": 0.9375,
+        "recall": 0.6521739130434783,
+        "f1-score": 0.7692307692307693,
+        "support": 23.0
+    },
+    "white spot": {
+        "precision": 0.78125,
+        "recall": 0.8928571428571429,
+        "f1-score": 0.8333333333333334,
+        "support": 28.0
+    },
+    "accuracy": 0.7837837837837838,
+    "macro avg": {
+        "precision": 0.8036858974358975,
+        "recall": 0.7758799171842651,
+        "f1-score": 0.7790859933717077,
+        "support": 74.0
+    },
+    "weighted avg": {
+        "precision": 0.8021699584199584,
+        "recall": 0.7837837837837838,
+        "f1-score": 0.7827513541799257,
+        "support": 74.0
+    }
+}

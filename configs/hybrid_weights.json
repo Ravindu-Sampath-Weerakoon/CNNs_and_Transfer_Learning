@@ -1,0 +1,14 @@
+{
+    "algal leaf": {
+        "VGG16_weight": 0.4635383639822448,
+        "ResNet50_weight": 0.5364616360177552
+    },
+    "brown blight": {
+        "VGG16_weight": 0.46153846153846156,
+        "ResNet50_weight": 0.5384615384615384
+    },
+    "white spot": {
+        "VGG16_weight": 0.4928500166278683,
+        "ResNet50_weight": 0.5071499833721317
+    }
+}

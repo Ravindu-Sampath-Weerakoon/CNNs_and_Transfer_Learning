@@ -1,0 +1,14 @@
+{
+    "model_type": "HybridEnsemble",
+    "model1_path": "/content/drive/MyDrive/CNNs and Transfer Learning/models/vgg16_best.pth",
+    "model1_name": "VGG16",
+    "model2_path": "/content/drive/MyDrive/CNNs and Transfer Learning/models/resnet50_best.pth",
+    "model2_name": "ResNet50",
+    "hybrid_weights_path": "/content/drive/MyDrive/CNNs and Transfer Learning/configs/hybrid_weights.json",
+    "class_names": [
+        "algal leaf",
+        "brown blight",
+        "white spot"
+    ],
+    "num_classes": 3
+}
